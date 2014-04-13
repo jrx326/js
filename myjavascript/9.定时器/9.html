@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>使用构造函数创建JavaScript对象</title>		
+	</head>
+	<body>
+		<p>构造函数法创建JavaScript对象</p>
+		<script type="text/javascript">
+		//定义构造函数
+		function Site(url, name)
+		{
+		    this.url = "www.dreamdu.com";
+		    this.name ="梦之都";
+		}
+		
+		//使用构造函数产生一个JavaScript对象的实例
+		var mysite = new Site();
+		alert(mysite.url);
+		</script>
+		
+		<p>直接法创建JavaScript对象</p>
+		<script type="text/javascript">
+		var site = {};
+		site.URL = "www.dreamdu.com";
+		site.name = "梦之都";
+		site.englishname = "dreamdu";
+		site.author = "可爱的猴子";
+		site.summary = "免费的网页设计教程";
+		site.pagescount = 100;
+		site.isOK = true;
+		site.startdate = new Date(2005, 12);
+		site.say = function(){alert(this.englishname+" say : hello world!")};
+		site.age = function(){var theage=(new Date().getFullYear())-site.startdate.getFullYear();alert(this.name+"已经"+theage+"岁了!")}
+		site.say();
+		site.age();
+		</script>
+
+	</body>
+</html>

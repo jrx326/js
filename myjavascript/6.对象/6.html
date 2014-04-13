@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+      //二位数组
+        
+     var fruit = new Array(3);
+fruit[0] = new Array("苹果", "A");
+fruit[1] = new Array("梨子", "B");
+fruit[2] = new Array("橘子", "C");
+
+for (i=0; i < fruit.length; i++) {
+  for (j=0; j < fruit[0].length; j++) {
+    document.write("fruit [", i, "][", j, "] = ", fruit[i][j],"<br>");
+  }
+  document.write("<br>");
+}   
+ </script> 
+    
+    <Script>
+var fruit = new Array("苹果", "梨子", "橘子");
+
+document.write("<LI>", fruit.join());
+document.write("<LI>", fruit.join("、"));
+document.write("<LI>", fruit.toString());
+document.write("<LI>", fruit.reverse().join());
+document.write("<LI>", fruit.valueOf(),"<br>");
+
+</Script>
+
+    <Script>
+
+var str = "hubert@abc.com.cn";
+var idx = str.search("@");
+var usr = str.substr(0,idx);
+document.write(usr.toUpperCase().fontsize(7), "<BR>");
+document.write("你的电子信箱是", str);
+
+</Script>
+    
+    
+    <Script>
+function isEmail(){
+  var str = document.form1.add.value;
+  if (str.indexOf("@") == -1)
+    alert("请填写正确的EMail地址");
+  else
+    alert("OK!");
+}
+
+</Script>
+
+<FORM name="form1">
+请输入你的 EMail 地址：
+<INPUT TYPE="text" name="add">
+<INPUT TYPE="button" value="开始检查" onClick="isEmail()">
+</FORM>
+    
+    
+    <Script>
+function member(name, sex) {
+  this.name = name;
+  this.sex = sex;
+  this.display = display;
+}
+
+function display() {
+  var str = this.name + "是" + this.sex;
+  document.write("<LI>" + str);
+}
+
+var papa = new member("杨宏文", "男生");
+var mama = new member("黄雅玲", "女生");
+var doggy = new member("奇　奇", "宠物狗");
+
+papa.display();
+mama.display();
+doggy.display();
+
+</Script>
+    
+    
+    
+<Script>
+String.prototype.replaceAll = strReplace;
+function strReplace(findText, replaceText) {
+  var str = new String(this);
+  while (str.indexOf(findText)!=-1) {
+    str = str.replace(findText, replaceText);
+  }
+  return str;
+}
+myStr = "告诉你 － 如果你正在寻找一本能帮助你彻底研究" +
+"JavaScript的书籍，请你一定要认明碁峰的" +
+"JavaScript教学范本，让你事半功倍，功力大增。";
+document.write("<LI>原稿是：<BLOCKQUOTE>" + myStr +"</BLOCKQUOTE>");
+document.write("<LI>利用Replace()将「你」改成「您」："
++"<BLOCKQUOTE>" + myStr.replace('你','您') +"</BLOCKQUOTE>");
+document.write("<LI>利用自定义的字符串方法 - 全部取代"
++"<BLOCKQUOTE>" + myStr.replaceAll('你','您') +"</BLOCKQUOTE>");
+
+</Script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+//算术运算符
+var x = 9; 
+var y = 4;
+document.write("x+y=",x+y,"<br>");
+document.write("x-y=",x-y,"<br>");
+document.write("x*y=",x*y,"<br>");
+document.write("x/y=",x/y,"<br>");
+document.write("x = 9, y = 4"," <br>");
+        
+var a = b = 9; 
+document.write("a = 4, b = 4 <br>");
+document.write("若a = b++ 运算之后：");
+a = b++;
+document.write("a 是 ", a, "; b 是 ", b, "<br>");
+document.write("再作a = ++b 运算：");
+a = ++b;
+document.write("a 是 ", a, "; b 是 ", b);
+
+        
+        
+//比较运算符
+var c=5,d='5',e=6;
+document.write("c=5,d='5',e=6","<br>");
+document.write("c==d?",c==d,"<br>");
+document.write("c===d?",c===d,"<br>");
+
+        
+//逻辑运算符
+var t = true;
+var f = false;
+
+with(document)
+{
+write("<OL><LI>true && true 的结果是 ", t && t);
+write("<LI>true && false 的结果是 ", t && f);
+write("<LI>false && true 的结果是 ", f && t);
+write("<LI>false && false 的结果是 ", f && f);
+write("<LI>true && (1==1) 的结果是 ", t && (1==1));
+write("<LI>false && 'A' 的结果是 ", f && 'A');
+write("<LI>'A' && false 的结果是 ", 'A' && f);
+write("<LI>true && 'A' 的结果是 ", t && 'A');
+write("<LI>'A' && true 的结果是 ", 'A' && t);
+write("<LI>'A' && 'B' 的结果是 ", 'A' && 'B');
+write("<OL><LI>true || true 的结果是 ", t || t);
+write("<LI>true || false 的结果是 ", t || f);
+write("<LI>false || true 的结果是 ", f || t);
+write("<LI>false || false 的结果是 ", f || f);
+write("<LI>true || (1==1) 的结果是 ", t || (1==1));
+write("<LI>false || 'A' 的结果是 ", f || 'A');
+write("<LI>'A' || false 的结果是 ", 'A' || f);
+write("<LI>true || 'A' 的结果是 ", t || 'A');
+write("<LI>'A' || true 的结果是 ", 'A' || t);
+write("<LI>'A' || 'B' 的结果是 ", 'A' || 'B');
+write("<LI>!true 的结果是 ", !true);
+write("<LI>!false 的结果是 ", !false);
+write("<LI>!'A' 的结果是 ", !'A');
+write("<LI>!0 的结果是 ", !0); 
+}
+
+
+   </script> 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+      
+
+function show(obj){
+    var str=eval("document.form."+obj+".value");
+    alert(str);
+}
+</Script>
+
+<form name="form" id="form">
+姓名：
+ <input name="name" type="text" id="name">
+ <input type="button" name="Button" value="Button" onclick=show("name")>
+</form>
+     
+<Script>
+x = 1 + 2;
+y = "1 + 2";
+z = eval("1 + 2");
+
+document.write("<LI>1 + 2 = ", x);
+document.write("<LI>\"1 + 2\" = ", y);
+document.write("<LI>eval(\"1 + 2\") = ", z);
+
+</Script>
+    
+    <Script>
+var x = 15;
+var y = "黄雅玲";
+
+document.write("<LI>x 不是数值吗？",isNaN(x));
+document.write("<LI>y 不是数值吗？",isNaN(y));
+
+</Script>
+    
+    <Script>
+// 二进位转成十进位
+
+document.write("1101<sub>2</sub> = " ,parseInt("1101", 2),"<sub>10</sub><br>");
+
+// 十六进位转成十进位
+
+document.write("BFFF<sub>16</sub> = " ,parseInt("BFFF", 16),"<sub>10</sub><br>");
+
+</Script>
+    
+</body>
+</html>

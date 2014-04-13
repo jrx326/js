@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ 
+    
+   <Script>
+
+var url = new Array(3);
+url[0] = "http://www.yam.org.tw/";
+url[1] = "http://www.kimo.com/";
+url[2] = "http://chinese.yahoo.com/";
+
+function goto(i) {
+    location = url[i];
+}
+
+</Script>
+
+<table width=250><tr><td>
+<form><fieldset>
+<legend>搜寻引擎</legend>
+<input name="go" type="radio" onClick="goto(0)">蕃薯藤
+<input name="go" type="radio" onClick="goto(1)">奇摩
+<input name="go" type="radio" onClick="goto(2)">中文雅虎
+</fieldset></form>
+</table>
+
+
+ 
+</body>
+</html>
